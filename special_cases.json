@@ -1,195 +1,89 @@
 {
-  "94 K]02 and 03 Pa-An District Myanmar (2007) 1798_02+03.jpg": {
-    "coord_infos": [{ "longitude": 98, "latitude": 17, "index": 2 }],
-    "notes": "has a small piece of 1798_02 which has been ignored"
-  },
-  "96 F]10 and F]11 Kawthoung District Myanmar (2008)1097_10 and 11.jpg": {
-    "coord_infos": [
-      { "longitude": 97, "latitude": 10, "index": 10 },
-      { "longitude": 97, "latitude": 10, "index": 11 }
+  "1399_01-1499_04.jpg": {
+    "band_color": "black",
+    "corner_overrides": [[289,417], null, null, [3485,418]],
+    "pixel_cutlines": [
+      [[289,216],[290,420],[540,422],[539,215], [289,216]]
     ]
   },
-  "86 F]04 and 08 Yangon Southern District Myanmar (2007)1393 _ 01&05 & 1493_04&08.jpg": {
-    "coord_infos": [
-      { "longitude": 93, "latitude": 13, "index": 1 },
-      { "longitude": 93, "latitude": 13, "index": 5 },
-      { "longitude": 93, "latitude": 14, "index": 4 },
-      { "longitude": 93, "latitude": 14, "index": 8 }
+  "1998_13.jpg": {
+    "band_color": "black",
+    "corner_overrides": [null,[661,7235],[6840,7237], null],
+    "pixel_cutlines": [
+      [[4485,7231],[4485,7438],[4557,7440],[4558,7704],[5018,7704],[5017,7438],[5369,7437],[5371,7253],[5388,7253],[5388,7234],[4485,7231]]
     ]
   },
-  "96 G]14 Kawthoung District Myanmar (2007) 0997_14.jpg": {
-    "corner_overrides": [null, null, null, [6979, 733]],
-    "corner_ratio": 0.08888
+  "1696_03.jpg": {
+    "band_color": "black",
+    "corner_overrides": [null, [666,7462], [6963,7472], null],
+    "pixel_cutlines": [
+      [[666,7458],[662,8130],[754,8107],[854,7986],[994,7874],[1232,7753],[1378,7655],[1486,7600],[1577,7460],[666,7458]]
+    ]
   },
-  "94 D]03 Pyapon District Myanmar (2004) 1696_03.jpg": {
-    "corner_overrides": [null, [665, 7462], [6962, 7473], null]
+  "1798_02-1798_03.jpg": {
+    "band_color": "black",
+    "pixel_cutlines": [
+      [[684,542],[684,691],[1319,690],[1316,544],[684,542]]
+    ]
   },
-  "94 I]13 Mongsat District Myanmar (2007) 1998_13.jpg": {
-    "corner_ratio": 0.08888
+  "0997_13-0997_14.jpg": {
+    "band_color": "black",
+    "corner_overrides": [[510,729],null,null,[6979,734]],
+    "pixel_cutlines": [
+      [[6430,462],[6429,740],[6979,743],[6979,461],[6430,462]]
+    ]
   },
-  "84 J]03 Falam District Myanmar (2004) 2294_03.jpg": {
-    "auto_rotate_thresh": 30,
-    "corner_ratio": 0.08888,
-    "find_line_scale": 8,
-    "corner_overrides": [null, [191, 7338], null, null]
-  },
-  "95 O]01 Dawei District (2008) 1399_01.jpg": {
-    "corner_ratio": 0.08888,
-    "find_line_scale": 15,
-    "max_corner_angle_diff": 26
-  },
-  "94 B]12 Bago District Myanmar (2007) 1896_12.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "93 O]11 Kyaington District Myanmar (2006) 2199_11.jpg": {
-    "band_color": ["greyish", "black"]
-  },
-  "84 J]08 Gangaw District Myanmar (2004) 2294_08 (84_J_08).jpg": {
-    "auto_rotate_thresh": 30,
-    "corner_ratio": 0.08888,
-    "find_line_scale": 8,
-    "find_line_iter": 4,
-    "corner_overrides": [null, [155,7363], null, null]
-  },
-  "93 P]04 Mongsat District Myanmar (2008) 2099_04.jpg": {
-    "corner_ratio": 0.08888
-  },
-  "96 M]06 Myeik District Myanmar (2008) 1199_06.jpg": {
-    "corner_ratio": 0.08888
-  },
-  "85 I]07 Kyaukpyu District Myanmar (2004) 1994_07.jpg": {
-    "min_corner_angle_diff": 18
-  },
-  "95 K]14 Dawei District Myanmar (2007) 1398_14.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "84 O]01 Pakokku District Myanmar (2003) 2195_01.jpg": {
-    "find_line_scale": 5
-  },
-  "93 G]10 Loilem District Myanmar (2006) 2197_10.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "93 H]13 Loilem District Myanmar (2006) 2097_13.jpg": {
-    "corner_overrides": [[871,730], null, null, null]
-  },
-  "85 F]05 Kyaukpyu District Myanmar (2004) 1893_05.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "93 P]03 Mongsat District Myanmar (2006) 2099_03.jpg": {
-    "find_line_scale": 8
-  },
-  "93 J]07 Lashio District Myanmar (2007) 2298_07.jpg": {
+  "2294_08.jpg": {
     "band_color": ["black", "greyish"],
-    "find_line_scale": 8
+    "corner_overrides": [null,[306,7495],null,null]
   },
-  "84 J]06 Gangaw District Myanmar (2004) 2294_06.jpg": {
-    "min_corner_angle_diff": 16
+  "2497_15.jpg": {
+    "corner_ratio": 0.089
   },
-  "93 O]03 Mongsat District Myanmar (2006) 2199_03.jpg": {
-    "band_color": ["black", "greyish"]
+  "1199_06.jpg": {
+    "corner_ratio": 0.089
   },
-  "84 J]02 Falam District Myanmar (2004) 2294_02.jpg": {
-    "find_line_scale": 8
-  },
-  "95 O]03 Dawei and Myeik Districts (2008) 1399_03.jpg": {
-    "find_line_scale": 8
-  },
-  "93 N]07 Lashio District Myanmar (2006) 2299_07.jpg": {
-    "find_line_scale": 8
-  },
-  "95 P]04 Myeik District Myanmar (2007) 1299_04.jpg": {
-    "corner_overrides": [null, null, [7115, 7218], null]
-  },
-  "84 O]05 Sagaing District Myanmar (2003) 2195_05.jpg": {
-    "corner_overrides": [[896,744], null, null, null]
-  },
-  "93 H]09 Loilem District Myanmar (2007) 2097_09.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "96 K]05 Kawthoung District Myanmar (2007) 0998_05.jpg": {
-    "find_line_scale": 8,
-    "band_color": ["black", "greyish"]
-  },
-  "84 L]07 Minbu District Myanmar (2004) 2094_07.jpg": {
-    "min_corner_angle_diff": 20,
-    "find_line_scale": 10,
-    "find_line_iter": 4
-  },
-  "92 H]15 Bhamo District Myanmar (2006) 2497_15.jpg": {
-    "corner_ratio": 0.08888
-  },
-  "93 H]16 Loilem District Myanmar (2006) 2097_16.jpg": {
-    "find_line_scale": 8
-  },
-  "84 M]06 Katha District Myanmar (2005) 2395_06.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "94 F]03 Pa-An District Myanmar (2007) 1897_03.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "93 G]01 Taunggyi District Myanmar (2003) 2197_01.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "93 G]01 Taunggyi District Myanmar (2003) 2197_01.jpg": {
-    "find_line_scale": 8
-  },
-  "94 A]11 Yamethin District Myanmar (2006) 1996_11.jpg": {
-    "find_line_iter": 4,
-    "find_line_scale": 8
-  },
-  "102 D]03 Tachileik District Myanmar (2006) 20100_03.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "94 A]15 Loikaw District Myanmar (2006) 1996_15.jpg": {
-    "find_line_scale": 8
-  },
-  "93 L]02 Loilem District Myanmar (2006) 2098_02.jpg": {
-    "find_line_scale": 8
-  },
-  "93 P]07 Mongsat District Myanmar (2006) 2099_07.jpg": {
-    "find_line_iter": 4,
-    "find_line_scale": 8
-  },
-  "83 P]16 Katha District Myanmar (2008) 2495_16.jpg": {
+  "1498_06.jpg": {
     "band_color": ["black", "greyish"],
-    "find_line_scale": 8
+    "corner_overrides": [null, null, [6964,7334], null],
+    "pixel_cutlines": [
+      [[6949,6288],[6951,7333],[7258,7336],[7256,7084],[7128,6902],[6991,6288],[6949,6288]]
+    ]
   },
-  "93 E]16 Lashio District Myanmar (2008) 2397_16.jpg": {
-    "band_color": ["black", "greyish"]
-  },   
-  "94 I]02 Loilem District Myanmar (2008) 1998_02.jpg": {
+  "2494_12.jpg": {
+    "max_corner_angle_diff_cutoff": 15
+  },
+  "2594_12.jpg": {
+    "corner_ratio": 0.089
+  },
+  "1897_11.jpg": {
+    "corner_ratio": 0.089
+  },
+  "1697_09.jpg": {
+    "find_line_scale": 12
+  },
+  "2099_04.jpg": {
+    "corner_ratio": 0.089
+  },
+  "2294_03.jpg": {
     "band_color": ["black", "greyish"],
-    "collar_erode": -3
+    "corner_overrides": [null, [295,7433], null, null]
   },
-  "94 H]09 Pa-an District Myanmar (2007) 1697_09.jpg": {
-    "find_line_iter": 4,
-    "corner_overrides": [null, null, [6850,7192], null]
+  "2393_09.jpg": {
+    "max_corner_angle_diff_cutoff": 10
   },
-  "84 H]08 Sittwe District Myanmar (2004) 2093_08.jpg": {
-    "find_line_iter": 4
-  },
-  "94 E]15 Loikaw District Myanmar (2007) 1997_15.jpg": {
-    "find_line_scale": 8
-  },
-  "95 O]04 Myeik District (2007) 1399_04.jpg": {
-    "find_line_iter": 4,
-    "find_line_scale": 8,
+  "1696_13.jpg": {
+    "max_corner_angle_diff_cutoff": 15,
     "band_color": ["black", "greyish"],
-    "corner_overrides": [null, null, [3501, 3629], [3499, 370]]
+    "corner_overrides": [null, [657,7381], null, null],
+    "pixel_cutlines": [
+      [[657,7374],[656,7668],[711,7660],[811,7571],[852,7530],[980,7376],[657,7374]]
+    ]
   },
-  "93 L]08 Loilem District Myanmar (2005) 2098_08.jpg": {
-    "find_line_scale": 8
+  "2197_05.jpg": {
+    "max_corner_angle_diff_cutoff": 15
   },
-  "94 L]04 Mawlamyine District Myanmar (2007) 1698_04.jpg": {
-    "band_color": ["black", "greyish"]
-  },
-  "95 F]15 Dawei District Myanmar (2007) 1497_15.jpg": {
-    "find_line_iter": 4
-  },
-  "94 H]05 Pa-an District Myanmar (2007) 1697_05.jpg": {
-    "find_line_scale": 8
-  },
-  "93 K]09 Lashio District Myanmar (2006) 2198_09.jpg": {
-    "find_line_iter": 4
+  "1894_09.jpg": {
+    "max_corner_angle_diff_cutoff": 5
   }
 }
