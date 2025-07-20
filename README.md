@@ -1,2 +1,15 @@
 # myanmar_survey_maps
-Contains Georeferenced survey maps of Myanmar
+
+Myanmar Survey Department 1:50000 sheets gereferenced and tiled into a tilemap
+
+# Links
+  - Original data sourced through [Old Survey of India Collection on Zenodo](https://zenodo.org/records/15028333) CC-BY
+    - [sheets](https://github.com/ramSeraph/myanmar_survey_maps/releases/tag/50k-orig)
+
+  - Georeferenced data
+    - [georeferenced and cropped sheets](https://github.com/ramSeraph/myanmar_survey_maps/releases/tag/50k-georef)
+
+  - Tilemap and pmtiles
+    - [Pmtiles](https://github.com/ramSeraph/myanmar_survey_maps/releases/tag/50k-pmtiles)
+
+  - [Demo](https://ramseraph.github.io/myanmar_survey_maps/)
