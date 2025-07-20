@@ -8,6 +8,10 @@ https://zenodo.org/records/15028333
 
 https://zenodo.org/records/11367062
   - Georeferenced and cropped "63k Maps of Burma"
+https://zenodo.org/records/13346102
+  - Georeferenced and cropped "126k Maps of Burma"
+https://zenodo.org/records/13341173
+  - Georeferenced and cropped "253k Maps of Burma"
 
 
 https://viewer.slv.vic.gov.au/?entity=IE9105347&mode=browse pegu survey

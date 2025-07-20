@@ -1,11 +1,9 @@
 # /// script
 # requires-python = ">=3.12"
 # dependencies = [
-#     "topo_map_processor",
+#     "topo_map_processor[parse]",
 # ]
 #
-# [tool.uv.sources]
-# topo_map_processor = { path = "../topo_map_processor", editable = true }
 # ///
 
 
@@ -18,7 +16,7 @@ from pyproj import Transformer
 from pyproj.database import query_utm_crs_info
 from pyproj.aoi import AreaOfInterest
 
-from topo_map_processor import TopoMapProcessor, LineRemovalParams
+from topo_map_processor.processor import TopoMapProcessor, LineRemovalParams
 
 index_map = None
 def get_index_map():

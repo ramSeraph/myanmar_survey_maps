@@ -32,5 +32,22 @@ uvx --with numpy --with pillow --with gdal==$GDAL_VERSION --from topo_map_proces
 # 10. partition the tiles
 uvx --from topo_map_processor partition --only-disk --from-tiles-dir export/tiles --to-pmtiles-prefix export/pmtiles/Myanmar_50k --attribution-file attribution.txt --name "Myanmar_50k" --description "Myanmar 1:50000 Topo maps from Survey Department"
 
-# 11. push to releases
+# 11. push raw files to github
+scripts/upload_to_release.sh 50k-orig data/raw/ jpg
+scripts/generate_lists.sh 50k-orig .jpg
+
+# 12. push georefernced files to github
+scripts/upload_to_release.sh 50k-georef export/gtiffs/ tif
+scripts/generate_lists.sh 50k-georef .tif
+
+# 13. push the bounds file to github
+uvx --from topo_map_processor collect-bounds --bounds-dir export/bounds --output-file export/bounds.geojson
+gh release upload 50k-georef export/bounds.geojson
+
+# 14. push the tiles to github
 gh release upload 50k-pmtiles export/pmtiles/Myanmar_50k*
+
+# 15. track what has been tiled
+gh release download 50k-georef -p listing_files.csv
+gh release upload 50k-pmtiles listing_files.csv
+rm listing_files.csv
