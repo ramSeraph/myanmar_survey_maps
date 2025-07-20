@@ -9,7 +9,10 @@ Myanmar Survey Department 1:50000 sheets gereferenced and tiled into a tilemap
   - Georeferenced data
     - [georeferenced and cropped sheets](https://github.com/ramSeraph/myanmar_survey_maps/releases/tag/50k-georef)
 
-  - Tilemap and pmtiles
+  - Tilemap urls and pmtiles
     - [Pmtiles](https://github.com/ramSeraph/myanmar_survey_maps/releases/tag/50k-pmtiles)
+
+  - Georeferncing information actual sheet extents
+    - [bounds](https://github.com/ramSeraph/myanmar_survey_maps/releases/download/50k-georef/bounds.geojson)
 
   - [Demo](https://ramseraph.github.io/myanmar_survey_maps/)
