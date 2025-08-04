@@ -29,7 +29,13 @@ uvx --from topo_map_processor upload-to-release 50k-georef export/gtiffs/ tif ye
 uvx --from topo_map_processor generate-lists.sh 50k-georef .tif
 
 # 6) recreate the pmtiles and reupload
-scripts/retile_sheets.sh -p 50k-pmtiles -g 50k-georef -x Myanmar_50k -l listing_files.csv
+GDAL_VERSION=$(gdalinfo --version | cut -d"," -f1 | cut -d" " -f2)
+
+uvx --with numpy \
+    --with pillow \
+    --with gdal==$GDAL_VERSION \
+    --from topo_map_processor \
+    retile-e2e -p 50k-pmtiles -g 50k-georef -x Myanmar_50k -l listing_files.csv
 
 
 
