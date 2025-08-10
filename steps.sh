@@ -27,18 +27,18 @@ uv run create_index.py
 uv run parse.py
 
 # 9. create the tiles
-uvx --with numpy --with pillow --with gdal==$GDAL_VERSION --from topo_map_processor tile --tiffs-dir export/gtiffs --tiles-dir export/tiles --max-zoom 14
+uvx --with numpy --with pillow --with gdal==$GDAL_VERSION --from topo_map_processor tile --tiffs-dir export/gtiffs --tiles-dir export/tiles --max-zoom 14 --attribution-file attribution.txt --name "Myanmar_50k" --description "Myanmar 1:50000 Topo maps from Survey Department"
 
 # 10. partition the tiles
-uvx --from topo_map_processor partition --only-disk --from-tiles-dir export/tiles --to-pmtiles-prefix export/pmtiles/Myanmar_50k --attribution-file attribution.txt --name "Myanmar_50k" --description "Myanmar 1:50000 Topo maps from Survey Department"
+uvx --from topo_map_processor partition --from-source export/tiles --to-pmtiles export/pmtiles/Myanmar_50k.pmtiles
 
 # 11. push raw files to github
-scripts/upload_to_release.sh 50k-orig data/raw/ jpg
-scripts/generate_lists.sh 50k-orig .jpg
+uvx --from gh_release_tools upload-to-release 50k-orig data/raw jpg
+uvx --from gh_release_tools generate-lists 50k-orig .jpg
 
 # 12. push georefernced files to github
-scripts/upload_to_release.sh 50k-georef export/gtiffs/ tif
-scripts/generate_lists.sh 50k-georef .tif
+uvx --from gh_release_tools upload-to-release 50k-georef export/gtiffs tif
+uvx --from gh_release_tools generate-lists 50k-georef .tif
 
 # 13. push the bounds file to github
 uvx --from topo_map_processor collect-bounds --bounds-dir export/bounds --output-file export/bounds.geojson

@@ -25,8 +25,8 @@ gh release upload 50k-georef export/bounds.geojson --clobber
 rm export/bounds.geojson bounds.geojson
 
 # 5) push the new geotiffs and update
-uvx --from topo_map_processor upload-to-release 50k-georef export/gtiffs/ tif yes
-uvx --from topo_map_processor generate-lists.sh 50k-georef .tif
+uvx --from gh_release_tools upload-to-release 50k-georef export/gtiffs/ tif yes
+uvx --from gh_release_tools generate-lists.sh 50k-georef .tif
 
 # 6) recreate the pmtiles and reupload
 GDAL_VERSION=$(gdalinfo --version | cut -d"," -f1 | cut -d" " -f2)
