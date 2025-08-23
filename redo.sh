@@ -20,13 +20,13 @@ uv run parse.py
 
 # 4) recreate the bounds file and push it
 gh release download 50k-georef -p bounds.geojson 
-uvx --from topo_map_processor collect-bounds --preexisting-file bounds.geojson --bounds-dir export/bounds --output-file export/bounds.geojson
+uvx --from topo-map-processor collect-bounds --preexisting-file bounds.geojson --bounds-dir export/bounds --output-file export/bounds.geojson
 gh release upload 50k-georef export/bounds.geojson --clobber
 rm export/bounds.geojson bounds.geojson
 
 # 5) push the new geotiffs and update
-uvx --from gh_release_tools upload-to-release 50k-georef export/gtiffs/ tif yes
-uvx --from gh_release_tools generate-lists.sh 50k-georef .tif
+uvx --from gh-release-tools upload-to-release -r '50k-georef' -d 'export/gtiffs/' -e '.tif' --overwrite
+uvx --from gh-release-tools generate-lists -r '50k-georef' -e '.tif'
 
 # 6) recreate the pmtiles and reupload
 GDAL_VERSION=$(gdalinfo --version | cut -d"," -f1 | cut -d" " -f2)
@@ -34,7 +34,7 @@ GDAL_VERSION=$(gdalinfo --version | cut -d"," -f1 | cut -d" " -f2)
 uvx --with numpy \
     --with pillow \
     --with gdal==$GDAL_VERSION \
-    --from topo_map_processor \
+    --from topo-map-processor \
     retile-e2e -p 50k-pmtiles -g 50k-georef -x Myanmar_50k -l listing_files.csv
 
 

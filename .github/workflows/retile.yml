@@ -44,6 +44,6 @@ jobs:
           uvx --with numpy \
               --with pillow \
               --with gdal==$GDAL_VERSION \
-              --from topo_map_processor \
+              --from topo-map-processor \
               retile-e2e -p 50k-pmtiles -g 50k-georef -x Myanmar_50k -l listing_files.csv
 
